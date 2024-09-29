@@ -37,7 +37,7 @@ Click on the Start menu, type PowerShell, right-click on Windows PowerShell, and
 Step 2: Change the Execution Policy
 In the PowerShell window (running as Administrator), run the following command to allow scripts to run:
 
-+ Set-ExecutionPolicy RemoteSigned
+## Set-ExecutionPolicy RemoteSigned
 RemoteSigned: This setting allows scripts created locally to be executed, but requires that scripts downloaded from the internet be signed by a trusted publisher.
 When prompted for confirmation, type Y and press Enter.
 
@@ -46,9 +46,7 @@ After setting the execution policy, close the PowerShell window and open a new P
 
 Now, try activating the virtual environment again:
 
-bash
-Copy code
-env\Scripts\activate
+## env\Scripts\activate
 
 then after the activation run the below command to install the require dependencies
 pip install -r requirements.txt
