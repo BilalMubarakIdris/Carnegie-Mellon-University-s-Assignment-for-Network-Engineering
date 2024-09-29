@@ -37,9 +37,7 @@ Click on the Start menu, type PowerShell, right-click on Windows PowerShell, and
 Step 2: Change the Execution Policy
 In the PowerShell window (running as Administrator), run the following command to allow scripts to run:
 
-bash
-Copy code
-Set-ExecutionPolicy RemoteSigned
++ Set-ExecutionPolicy RemoteSigned
 RemoteSigned: This setting allows scripts created locally to be executed, but requires that scripts downloaded from the internet be signed by a trusted publisher.
 When prompted for confirmation, type Y and press Enter.
 
